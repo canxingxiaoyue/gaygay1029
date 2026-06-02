@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export', // Dòng này bắt buộc phải có để chạy trên GitHub Pages
   images: {
-    unoptimized: true,
+    unoptimized: true, // Dòng này giúp hình ảnh không bị lỗi khi chuyển sang web tĩnh
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
